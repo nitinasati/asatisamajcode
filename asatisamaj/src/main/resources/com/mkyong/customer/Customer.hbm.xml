@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 April 2010 8:33:09 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="com.mkyong.customer.model.Customer" table="member_details" catalog="">
+        <id name="memberid" type="long">
+            <column name="member_id" />
+            <generator class="identity" />
+        </id>
+        <property name="samajArea" type="string">
+            <column name="samajarea" length="40" not-null="true" />
+        </property>        
+        <property name="fullName" type="string">
+            <column name="full_name" length="100" not-null="true" />
+        </property>
+        <property name="fatherName" type="string">
+            <column name="father_name" length="100" not-null="true" />
+        </property> 
+         <property name="motherName" type="string">
+            <column name="mother_name" length="100" not-null="true" />
+        </property>    
+         <property name="grandPaName" type="string">
+            <column name="grandpa_name" length="100" not-null="true" />
+        </property>                     
+        <property name="gender" type="string">
+            <column name="gender" length="10" not-null="true" />
+        </property>
+        <property name="birth" type="string">
+            <column name="birth" length="15" not-null="true" />
+        </property>
+        <property name="idType" type="string">
+            <column name="ID_TYPE" length="30" not-null="true" />
+        </property>
+        <property name="idNumber" type="string">
+            <column name="id_number" length="50" not-null="true" />
+        </property>
+        <property name="timeHH" type="string">
+            <column name="time_hh" length="2" not-null="true" />
+        </property>
+        <property name="timeMM" type="string">
+            <column name="time_mm" length="2" not-null="true" />
+        </property>
+        <property name="timeAMPM" type="string">
+            <column name="time_ampm" length="2" not-null="true" />
+        </property>
+        <property name="birthPlace" type="string">
+            <column name="birth_place" length="2" not-null="true" />
+        </property>
+        <property name="height" type="string">
+            <column name="height" length="20" not-null="true" />
+        </property>
+        <property name="weight" type="string">
+            <column name="weight" length="20" not-null="true" />
+        </property>        
+        <property name="color" type="string">
+            <column name="color" length="50" not-null="true" />
+        </property>        
+        <property name="manglik" type="string">
+            <column name="manglik" length="10" not-null="true" />
+        </property>
+        <property name="education" type="string">
+            <column name="education" length="100" not-null="true" />
+        </property>
+        <property name="boardUnivercity" type="string">
+            <column name="board_univercity" length="100" not-null="true" />
+        </property>        
+        <property name="occupation" type="string">
+            <column name="occupation" length="100" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="300" not-null="true" />
+        </property>
+        <property name="cityState" type="string">
+            <column name="city_state" length="300" not-null="true" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="50" not-null="true" />
+        </property>        
+        <property name="phoneStd" type="string">
+            <column name="phone_std" length="20" not-null="true" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="40" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true" />
+        </property>  
+         <property name="fatherOccupation" type="string">
+            <column name="father_occupation" length="100" not-null="true" />
+        </property>
+        <property name="brothers" type="string">
+            <column name="brothers" length="2" not-null="true" />
+        </property>        
+         <property name="brothersMarried" type="string">
+            <column name="married_brothers" length="2" not-null="true" />
+        </property>  
+        <property name="sisters" type="string">
+            <column name="sisters" length="2" not-null="true" />
+        </property> 
+        <property name="sistersMarried" type="string">
+            <column name="married_sisters" length="2" not-null="true" />
+        </property>         
+        <property name="vansh" type="string">
+            <column name="vansh" length="50" not-null="true" />
+        </property>         
+        <property name="gotra" type="string">
+            <column name="gotra" length="2" not-null="true" />
+        </property> 
+        <property name="priorityOccupation" type="string"> 
+            <column name="occupation_priority" length="100" not-null="true" />
+        </property>                  
+        <property name="status" type="string">
+            <column name="status" length="50" not-null="true" />
+        </property> 
+        <property name="createDateTime" type="timestamp">
+            <column name="create_date_time" not-null="true" />
+        </property>
+        <property name="modifyDateTime" type="timestamp">
+            <column name="modify_date_time" not-null="true" />
+        </property>                   
+    </class>
+</hibernate-mapping>
