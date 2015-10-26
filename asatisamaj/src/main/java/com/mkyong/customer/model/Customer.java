@@ -1,6 +1,8 @@
 package com.mkyong.customer.model;
 
+import java.sql.Blob;
 import java.util.Date;
+
 
 public class Customer implements java.io.Serializable {
 
@@ -46,6 +48,7 @@ public class Customer implements java.io.Serializable {
 	private String status;
 	private Date createDateTime;
 	private Date modifyDateTime;
+	private String imagePath;
 
 	public Customer(long memberid,String samajArea, String fullName, String fatherName,
 			String motherName, String grandPaName, String idType, String idNumber, String timeHH,
@@ -56,7 +59,7 @@ public class Customer implements java.io.Serializable {
 			String mobile, String email, String fatherOccupation,
 			String brothers, String brothersMarried, String sisters,
 			String sistersMarried,String priorityOccupation, String vansh, String gotra, String status,
-			Date createDateTime, Date modifyDateTime) {
+			Date createDateTime, Date modifyDateTime,String imagePath) {
 
 		this.memberid = memberid;
 		this.samajArea = samajArea;
@@ -96,6 +99,7 @@ public class Customer implements java.io.Serializable {
 		this.status = status;
 		this.createDateTime = createDateTime;
 		this.modifyDateTime = modifyDateTime;
+		this.imagePath = imagePath;
 	}
 
 
@@ -424,6 +428,20 @@ public class Customer implements java.io.Serializable {
 	public void setSamajArea(String samajArea) {
 		this.samajArea = samajArea;
 	}
+
+
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+
 
 
 }
