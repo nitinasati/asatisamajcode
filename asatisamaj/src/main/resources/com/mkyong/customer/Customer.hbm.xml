@@ -118,6 +118,9 @@
         </property>
         <property name="modifyDateTime" type="timestamp">
             <column name="modify_date_time" not-null="true" />
+        </property> 
+         <property name="imagePath" type="string">
+            <column name="imagepath" length="100" not-null="false" />
         </property>                   
     </class>
 </hibernate-mapping>
