@@ -78,10 +78,6 @@ public class CustomerForm extends ActionForm {
             errors.add("height", new ActionMessage("error.height.required"));
  
         }
-        if (email == null || email.length() < 1) {
-            errors.add("email", new ActionMessage("error.email.required"));
- 
-        }
         if (birth == null) {
             errors.add("birth", new ActionMessage("error.birth.required"));
  
@@ -109,14 +105,6 @@ public class CustomerForm extends ActionForm {
         }
         if (country == null || country.length() < 1) {
             errors.add("country", new ActionMessage("error.country.required"));
- 
-        }
-        if (phoneStd == null || phoneStd.length() < 1) {
-            errors.add("phoneStd", new ActionMessage("error.phoneStd.required"));
- 
-        }
-        if (mobile == null || mobile.length() < 1) {
-            errors.add("mobile", new ActionMessage("error.mobile.required"));
  
         }
         return errors;
