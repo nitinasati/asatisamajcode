@@ -36,6 +36,15 @@
 
 
 		<action
+			path="/UploadFile"
+			type="com.mkyong.customer.action.UploadFileAction"
+			name="UploadForm"
+			input="/pages/customer/uploadFile.jsp"
+			>	
+			<forward name="success" redirect="true" path="/ListCustomer.do"/>
+		</action>
+		
+		<action
 			path="/AddCustomer"
 			type="com.mkyong.customer.action.AddCustomerAction"
 			name="customerForm"
@@ -47,13 +56,19 @@
 		</action>
 		
 		<action
-			path="/ListCustomer"
+			path="/SearchCustomer"
 			type="com.mkyong.customer.action.ListCustomerAction"
-			name="dynaCustomerListForm">	
- 
+			name="dynaCustomerListForm"
+			input="/pages/customer/list_customer.jsp"> 
 			<forward name="success" path="/pages/customer/list_customer.jsp"/>
 		</action>
 		
+		<action
+			path="/ListCustomer"
+			type="com.mkyong.customer.action.ListCustomerAction"
+			name="dynaCustomerListForm"> 
+			<forward name="success" path="/pages/customer/list_customer.jsp"/>
+		</action>		
 		
 	</action-mappings>
  
