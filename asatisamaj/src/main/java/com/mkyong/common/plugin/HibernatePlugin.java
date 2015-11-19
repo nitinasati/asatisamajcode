@@ -52,12 +52,7 @@ public class HibernatePlugin implements PlugIn {
       try {
          factory.close();
       } catch (HibernateException e) {
-        // e.printStackTrace();
-         System.out.println("Hibernate Exception --- " +e);
+         e.printStackTrace();
       }
-      catch (Exception e) {
-          // e.printStackTrace();
-           System.out.println("General Exception --- " +e);
-        }
    }
 }
