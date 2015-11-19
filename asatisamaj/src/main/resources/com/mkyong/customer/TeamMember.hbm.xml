@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 April 2010 8:33:09 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="com.mkyong.customer.model.Team" table="team_details" catalog="">
+        <id name="memberid" type="long">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="fullName" type="string">
+            <column name="Name" length="100" not-null="false" />
+        </property>        
+        <property name="designation" type="string">
+            <column name="Designation" length="100" not-null="false" />
+        </property>
+        <property name="department" type="string">
+            <column name="Department" length="100" not-null="false" />
+        </property> 
+                <property name="city" type="string">
+            <column name="City" length="100" not-null="false" />
+        </property>        
+        <property name="contactNumber" type="string">
+            <column name="ContactNumber" length="100" not-null="false" />
+        </property>
+        <property name="createDateTime" type="timestamp">
+            <column name="create_date_time" not-null="false" />
+        </property>
+        <property name="modifyDateTime" type="timestamp">
+            <column name="modify_date_time" not-null="false" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" not-null="false" />
+        </property> 
+     </class>
+</hibernate-mapping>

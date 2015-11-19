@@ -16,15 +16,10 @@
 </head>
 <body>
 <br>
-<br>
-	<center><h3>आपको असाटी समाज दर्पण परिवार की ओर से धन्यवाद । आपका आई.डी.पंजीयन नं0 <font face="Times New Roman" face="vardana" color="red"><bean:write name="customerForm" property="memberId"/></font> है जो होम पेज/सर्विस टेब पर  "अविवाहित की सूची" लिंक पर 1-2 बाद डिस्पिले होगा अन्यथा हेल्प नं0 8989837643 पर काल करें । Please proceed to upload your photo.</h3></center>
-<br />
-<center><html:link action="/Welcome.do">Home</html:link><br />
-<html:link action="/AddCustomerPage.do">Add More Members</html:link><br />
-<html:link action="/ListCustomer.do">List Members</html:link><br />
-	</center>
-	<form id="UploadForm" action="UploadFile.do" method="post" onsubmit="return fileSubmit(this)" enctype="multipart/form-data">
-<center>		<input type="file" size="60" id="imagePath" name="imagePath" onchange = "return fileExtension(this)"> 
+	<form id="UploadForm" action="<%=request.getContextPath()%>/UploadFile.do" method="post" onsubmit="return fileSubmit(this)" enctype="multipart/form-data">
+<center>	
+Enter MemberID: <input type="text" name="memberId" size="10" maxlength="10" /><br>	
+<input type="file" size="60" id="imagePath" name="imagePath" onchange = "return fileExtension(this)"> 
 	<input type="submit" value="Upload your photo"> <br />
 
 			
@@ -36,8 +31,6 @@ Error : <font face="Times New Roman" face="vardana" color="red"><%=request.getAt
 <br />
 <table border=1 align="center">
 <tr>
-<td>
-<input type="hidden" name="memberId" value="<bean:write name="customerForm" property="memberId"/>" />
 </tr>
 </table>
 </form>

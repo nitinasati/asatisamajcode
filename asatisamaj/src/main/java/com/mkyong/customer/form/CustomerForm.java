@@ -1,5 +1,8 @@
 package com.mkyong.customer.form;
 
+import java.io.File;
+import java.sql.Blob;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts.action.ActionErrors;
@@ -12,6 +15,7 @@ public class CustomerForm extends ActionForm {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private long memberId;
 	private String samajArea;
 	private String fullName;
 	private String fatherName;
@@ -109,10 +113,6 @@ public class CustomerForm extends ActionForm {
         }
         return errors;
     }
-
-
- 
-
 
 	@Override
 	public void reset(ActionMapping mapping, HttpServletRequest request) {
@@ -660,5 +660,21 @@ public class CustomerForm extends ActionForm {
 	public void setWeight(String weight) {
 		this.weight = weight;
 	}
-	
+
+
+
+
+
+	public long getMemberId() {
+		return memberId;
+	}
+
+
+
+
+
+	public void setMemberId(long memberId) {
+		this.memberId = memberId;
+	}
+
 }
