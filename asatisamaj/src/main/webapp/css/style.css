@@ -11,7 +11,7 @@ a:hover{ text-decoration: underline;}
 .topblock{ display:inline; clear:left; float:left;  width:1000px; height:700px;}
 .tp_bg1{ display:inline; clear:left; float:left; background: url(../images/tp_bg1.jpg) no-repeat;width:995px; height:280px;border-style: solid;
 		border-color: white;border-radius:5px;}
-.tp_bg3{ display:inline; clear: left; float:left;  background: url(../images/tp_bg3.jpg) no-repeat; width:900px; height:70px; padding:0 0 0 56px; }
+.tp_bg3{ display:inline; clear: left; float:left;  background: url(../images/tp_bg3.jpg) no-repeat; width:950px; height:70px; padding:0 0 0 50px; }
 .abt_tp_bg3{ display:inline; clear: left; float:left;  background: url(../images/abt_tp_bg3.jpg) no-repeat; width:1000px; height:100px; }
 .tp_abt{ float:left; width:60px; font: bold 11px/15px arial; color:#666768; margin:28px 0px 0px 55px; text-decoration:none;}
 .tp_abt1{ float:left; width:60px; font: bold 11px/15px arial; color:#666768; margin:28px 0px 0px 20px; text-decoration:none;}
@@ -78,12 +78,12 @@ a:hover{ text-decoration: underline;}
 .lates_more{ clear:left; float:left; width:145px; font: 11px/15px arial; color:#000; margin:15px 0px 0px 25px; text-decoration:none;}
 
 .ft_bg{ display: inline; clear:left; float:left; width:1000px; background: url(../images/ft_1px.gif) repeat-x; height:170px;}
-.ft_bar{ float:left; margin:32px 0px 0px 20px;}
+.ft_bar{ float:left; margin:32px 0px 0px 15px;}
 .ft_home{ clear:left; float:left; width:40px; font: 11px/15px tahoma; color:#828181; margin:29px 0px 0px 320px; text-decoration:none; }
 .ft_dom{ float:left; width:65px; font: 11px/15px tahoma; color:#828181; margin:29px 0px 0px 15px; text-decoration:none;}
 .ft_copy{ clear:left; float:left; width:290px; font: 11px/15px tahoma; color:#828181; margin:8px 0px 0px 440px;}
 .ft_dom1{ float:left; width:70px; font: 11px/15px tahoma; color:#828181; margin:29px 0px 0px 15px; text-decoration:none;}
-.ft_spl{ float:left; width:65px; font: 11px/15px tahoma; color:#828181; margin:29px 0px 0px 15px; text-decoration:none;}
+.ft_spl{ float:left; width:50px; font: 11px/15px tahoma; color:#828181; margin:29px 0px 0px 15px; text-decoration:none;}
 
 .form_blk{ width:500px; float:left; margin:20px 0 0 0; padding-bottom:30px; } 
 	
