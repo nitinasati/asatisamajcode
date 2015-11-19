@@ -12,7 +12,7 @@
 <body>
 <html:html>
 <h1>अविवाहित सदस्यों की सूची </h1>
-<html:form  action="/SearchCustomer.do" method="get" enctype="multipart/form-data"><br>
+<html:form  action="/ListAdminAction.do" method="get" enctype="multipart/form-data"><br>
 <html:link action="/AddCustomerPage.do">Add more members</html:link><br><html:link action="/Welcome.do">Home</html:link>
 <table border=1>
 <tr>
@@ -38,19 +38,25 @@
 		  <option value="Others">अन्य क्षेत्र</option>
 		</select><td><bean:message key="customer.label.manglik" />
         	<input type="radio" name="manglik" value="Yes">हाँ 
-        	<input type="radio" name="manglik" value="No">नहीं<td><input type="radio" name="gender" value="all">All <td><html:submit>Search</html:submit>
+        	<input type="radio" name="manglik" value="No">नहीं<td><input type="radio" name="gender" value="all">All Active <td><html:submit>Search</html:submit>
  </tr>
  </table>
  <br>
- <b><u>निर्देश :</u> सबमिट करने के दिन से लेकर अधिकतम 1-2 दिन बाद आपका बायोडाटा (जाँच के बाद) यहां  डिस्पले होगा अन्यथा हेल्प नं0 8989837643 पर काल करें।</b> 
- <br>
  <br>       	
 <table border=1>
-<logic:iterate id="customer" name="dynaCustomerListForm" property="customerList">
+<logic:iterate id="customer" name="dynaCustomerAdminListForm" property="customerAdminList">
 <tr>
+
+<td>
+<a href="<%=request.getContextPath()%>/ReviewProfile.do?memberId=<bean:write name="customer" property="memberid"/>&operation=Approve">Approve</a>
+<a href="<%=request.getContextPath()%>/ReviewProfile.do?memberId=<bean:write name="customer" property="memberid"/>&operation=Duplicate">Duplicate</a>
+<a href="<%=request.getContextPath()%>/ReviewProfile.do?memberId=<bean:write name="customer" property="memberid"/>&operation=Rejected">Reject</a>
+<a href="<%=request.getContextPath()%>/ReviewProfile.do?memberId=<bean:write name="customer" property="memberid"/>&operation=Deactivate">Deactivate</a>
+<td>
+<b><font face="Times New Roman" face="vardana" color="red"><bean:message key="customer.label.status" /> : </font></b><bean:write name="customer" property="status"/>
 <td>
 <logic:notEmpty name="customer" property="imageFile">
-	<a href="<%=request.getContextPath()%>/DownloadImage.do?memberId=<bean:write name="customer" property="memberid"/>" target="_blank">View Photo</a>
+	<a href="<%=request.getContextPath()%>/DownloadImage.do?memberId=<bean:write name="customer" property="memberid"/>" target="_blank"><img src="<%=request.getContextPath()%>/DownloadImage.do?memberId=<bean:write name="customer" property="memberid"/>" alt="" width="100" height="100"/></a>
 </logic:notEmpty>
 <td>
 <b><font face="Times New Roman" face="vardana" color="red"><bean:message key="customer.label.registrationNumber" /> </font></b><bean:write name="customer" property="memberid"/>,

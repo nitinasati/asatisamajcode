@@ -1,5 +1,8 @@
 package com.mkyong.customer.form;
 
+import java.io.File;
+import java.sql.Blob;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts.action.ActionErrors;
@@ -12,6 +15,7 @@ public class CustomerForm extends ActionForm {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private long memberId;
 	private String samajArea;
 	private String fullName;
 	private String fatherName;
@@ -78,10 +82,6 @@ public class CustomerForm extends ActionForm {
             errors.add("height", new ActionMessage("error.height.required"));
  
         }
-        if (email == null || email.length() < 1) {
-            errors.add("email", new ActionMessage("error.email.required"));
- 
-        }
         if (birth == null) {
             errors.add("birth", new ActionMessage("error.birth.required"));
  
@@ -111,20 +111,8 @@ public class CustomerForm extends ActionForm {
             errors.add("country", new ActionMessage("error.country.required"));
  
         }
-        if (phoneStd == null || phoneStd.length() < 1) {
-            errors.add("phoneStd", new ActionMessage("error.phoneStd.required"));
- 
-        }
-        if (mobile == null || mobile.length() < 1) {
-            errors.add("mobile", new ActionMessage("error.mobile.required"));
- 
-        }
         return errors;
     }
-
-
- 
-
 
 	@Override
 	public void reset(ActionMapping mapping, HttpServletRequest request) {
@@ -672,5 +660,21 @@ public class CustomerForm extends ActionForm {
 	public void setWeight(String weight) {
 		this.weight = weight;
 	}
-	
+
+
+
+
+
+	public long getMemberId() {
+		return memberId;
+	}
+
+
+
+
+
+	public void setMemberId(long memberId) {
+		this.memberId = memberId;
+	}
+
 }
