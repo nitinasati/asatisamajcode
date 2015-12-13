@@ -1,5 +1,6 @@
 package com.mkyong.customer.action;
  
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +16,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import com.mkyong.common.plugin.HibernatePlugin;
+import com.mkyong.customer.model.AuditList;
 import com.mkyong.customer.model.Customer;
  
 public class ListCustomerAction extends Action{
@@ -28,14 +30,26 @@ public class ListCustomerAction extends Action{
 		String registration = request.getParameter("registration");
 		String samajArea = request.getParameter("samajArea");
 		String manglik = request.getParameter("manglik");
-/*		AWSBucketConnection awsBucket = new AWSBucketConnection();
-		String folderName = "testFolder";
-		awsBucket.createFolder(awsBucket.bucketName, folderName, awsBucket.s3client);*/
+		
+		AuditList auditList = new AuditList();
 		Session session = sessionFactory.openSession();
 		
 		DynaActionForm dynaCustomerListForm = (DynaActionForm)form;
 		String preparedSQL = "from Customer where status = 'Active' ";
-
+		
+	//	System.out.println("1 : " + request.getHeader("User-Agent"));
+		auditList.setIpAddress(request.getRemoteAddr());
+		auditList.setQueryString(request.getQueryString());
+		auditList.setRemoteHost(request.getHeader("User-Agent"));
+		auditList.setRemoteUser(request.getRemoteUser());
+		auditList.setSessionId(request.getRequestedSessionId());
+		auditList.setLocale(request.getLocale().toString());
+		auditList.setCreateDate(new Date());
+		auditList.setModifyDate(new Date());
+		
+		session.beginTransaction();
+		session.saveOrUpdate(auditList);
+		session.getTransaction().commit();
 		
 		if (null != gender)
 		{

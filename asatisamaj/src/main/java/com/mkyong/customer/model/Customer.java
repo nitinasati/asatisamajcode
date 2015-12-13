@@ -1,6 +1,5 @@
 package com.mkyong.customer.model;
 
-import java.io.File;
 import java.sql.Blob;
 import java.util.Date;
 

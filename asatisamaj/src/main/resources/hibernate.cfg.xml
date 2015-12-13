@@ -6,11 +6,11 @@
 	<session-factory>
 		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.password">harsha0600</property>
-		<property name="hibernate.connection.url">jdbc:mysql://asatisamajdb.cbwd9bhd0dyz.us-east-1.rds.amazonaws.com:3306/asatisamaj?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8</property>
-			<property name="hibernate.connection.username">asatisamaj_user</property>
+		<property name="hibernate.connection.password">harsha</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/asatisamaj?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8</property>
+			<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="show_sql">false</property>
+		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		<property name="use_sql_comments">false</property>
 		<property name="c3p0.min_size">5</property>
@@ -22,5 +22,6 @@
 		<mapping resource="com/mkyong/customer/Customer.hbm.xml" />
 		<mapping resource="com/mkyong/customer/UserInformation.hbm.xml" />
 		<mapping resource="com/mkyong/customer/TeamMember.hbm.xml" />
+		<mapping resource="com/mkyong/customer/AuditInformation.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

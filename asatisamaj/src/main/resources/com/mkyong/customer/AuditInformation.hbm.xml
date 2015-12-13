@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 April 2010 8:33:09 PM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="com.mkyong.customer.model.AuditList" table="audit_details_list" catalog="">
+        <id name="auditId" type="long">
+            <column name="audit_id" />
+            <generator class="identity" />
+        </id>
+        <property name="ipAddress" type="string">
+            <column name="ip_address" length="20" not-null="false" />
+        </property>        
+        <property name="queryString" type="string">
+            <column name="query_string" length="200" not-null="false" />
+        </property>
+        <property name="remoteHost" type="string">
+            <column name="remote_host" length="300" not-null="false" />
+        </property> 
+        <property name="remoteUser" type="string">
+            <column name="remote_user" length="100" not-null="false" />
+        </property>        
+        <property name="sessionId" type="string">
+            <column name="session_id" length="200" not-null="false" />
+        </property>
+        <property name="locale" type="string">
+            <column name="locale" length="45" not-null="false" />
+        </property> 
+        <property name="createDate" type="timestamp">
+            <column name="create_date" not-null="false" />
+        </property>        
+        <property name="modifyDate" type="timestamp">
+            <column name="modify_date" not-null="false" />
+        </property>  
+     </class>
+</hibernate-mapping>
