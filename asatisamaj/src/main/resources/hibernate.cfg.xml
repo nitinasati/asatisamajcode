@@ -6,7 +6,7 @@
 	<session-factory>
 		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.password">harsha0600</property>
+		<property name="hibernate.connection.password">******</property>
 		<property name="hibernate.connection.url">jdbc:mysql://asatisamajdb.cbwd9bhd0dyz.us-east-1.rds.amazonaws.com:3306/asatisamaj?zeroDateTimeBehavior=convertToNull&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8</property>
 			<property name="hibernate.connection.username">asatisamaj_user</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
