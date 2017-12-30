@@ -24,7 +24,7 @@
   <li>फार्म के पूरे कालम पढ़ने के बाद 18/21 वर्ष से अधिक की युवतियां/युवकही प्रविष्टि भरे </li>
   <li><font color="red">*</font>अंकित कालम की जानकारी देना अनिवार्य है अन्यथा फार्म SUBMIT नहीं होगा</li>
   <li>नमूना फार्म देखने के लिये <a href="<%=request.getContextPath()%>/images/form.gif" target="_blank">Form</a> पर क्लिक करें  (please refresh the page if the form is not loaded)</li>
-  <li>फार्म SUBMIT करने के बाद asatisamajdarpan.com के सर्विस टेब पर "अविवाहित सदस्यों की सूची" <br> लिंक  पर  1-2 दिन बाद आपका बायोडाटा डिस्पले होगा अन्यथा हेल्प नं0 8989837643 पर काल करें तथा <br> पंजीयन नम्बरवाइज/लिंग/असाटी समाज का क्षेत्र /मांगलिक /जन्म वर्ष के मापदंडों के अनुसार अलग-अलग <br> समग्र सूची search/खोज करें ।</li>
+  <li>फार्म SUBMIT करने के बाद  http://asativaishyaparichay.in के सर्विस टेब पर "अविवाहित सदस्यों की सूची" <br> लिंक  पर  1-2 दिन बाद आपका बायोडाटा डिस्पले होगा अन्यथा हेल्प नं0 8989837643 पर काल करें तथा <br> पंजीयन नम्बरवाइज/लिंग/असाटी समाज का क्षेत्र /मांगलिक /जन्म वर्ष के मापदंडों के अनुसार अलग-अलग <br> समग्र सूची search/खोज करें ।</li>
 </ol></tr><tr><td><table align="center" border="1">
         <tr><td><bean:message key="customer.label.gender" /><font color="red">*</font>
          <td><SELECT name=gender>
