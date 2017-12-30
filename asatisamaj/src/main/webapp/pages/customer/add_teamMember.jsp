@@ -30,13 +30,7 @@
         <tr><td><bean:message key="customer.label.full_name" /><font color="red">*</font>
         	<td><input type="text" name="fullName" size="50" maxlength="100" /></tr>
         <tr><td><bean:message key="team.label.department" /><font color="red">*</font>
-        	<td><select name="department">
-        	<option value="select">समिति चुनिए</option>
-		  <option value="टेक्निकल समिति">टेक्निकल समिति</option>
-		  <option value="असाटी समाज दर्पण पत्रिका संचालन समिति">असाटी समाज दर्पण पत्रिका संचालन समिति</option>
-		  <option value="वेबसाइट प्रारंभिक संचालन कार्यों हेतु समिति">वेबसाइट प्रारंभिक संचालन कार्यों हेतु समिति</option>
-		  <option value="वेबसाइट असाटी समाज दर्पण के क्षेत्रीय प्रतिनिधि">वेबसाइट असाटी समाज दर्पण के क्षेत्रीय प्रतिनिधि</option>
-		  </select></tr>
+        	<td><input type="text" name="department" size="100" maxlength="100" /></tr>  
         <tr><td><bean:message key="team.label.designation" /><font color="red">*</font>
         	<td><input type="text" name="designation" size="50" maxlength="45" /></tr>  
     <tr><td><bean:message key="customer.label.cityState" /><font color="red">*</font>

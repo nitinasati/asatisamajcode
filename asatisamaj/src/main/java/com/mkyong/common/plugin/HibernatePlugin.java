@@ -21,6 +21,7 @@ public class HibernatePlugin implements PlugIn {
 
    public void setPath(String path) {
       this.path = path;
+    //testing change
    }
 
 

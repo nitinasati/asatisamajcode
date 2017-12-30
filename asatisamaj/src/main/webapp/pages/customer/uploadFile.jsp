@@ -17,7 +17,7 @@
 <body>
 <br>
 <br>
-	<center><h3>आपको असाटी समाज दर्पण परिवार की ओर से धन्यवाद । आपका आई.डी.पंजीयन नं0 <font face="Times New Roman" face="vardana" color="red"><bean:write name="customerForm" property="memberId"/></font> है जो होम पेज/सर्विस टेब पर  "अविवाहित की सूची" लिंक पर 1-2 बाद डिस्पिले होगा अन्यथा हेल्प नं0 8989837643 पर काल करें । Please proceed to upload your photo.</h3></center>
+	<center><h3>आपको असाटी समाज दर्पण परिवार की ओर से धन्यवाद । आपका आई.डी.पंजीयन नं0 <font face="Times New Roman" face="vardana" color="red"><bean:write name="customerForm" property="memberId"/></font> है जो होम पेज/सर्विस टेब पर  "अविवाहित की सूची" लिंक पर 1-2 दिन बाद डिस्पिले होगा अन्यथा हेल्प नं0 8989837643 पर काल करें । Please proceed to upload your photo.</h3></center>
 <br />
 <center><html:link action="/Welcome.do">Home</html:link><br />
 <html:link action="/AddCustomerPage.do">Add More Members</html:link><br />
